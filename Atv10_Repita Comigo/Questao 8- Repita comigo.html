@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+    <script>
+        /*8 - Escreva um algoritmo para ler as notas da 1a.
+         e 2a. avaliações de um aluno, calcule 
+        e imprima a média (simples) desse aluno.
+
+         Só devem ser aceitos valores válidos durante
+          a leitura (0 a 10) para cada nota.
+        Caso o valor informado para qualquer uma das notas
+         esteja fora do limite estabelecido, deve ser 
+         solicitado um novo valor ao usuário. */
+
+         var n1a = parseInt(prompt("Coloque a nota da primerira avaliação"));
+         var n2a =parseInt(prompt("Coloque a nota da segunda avaliação"));
+         var media = 0;
+         while(n1a < 0 || n1a > 10 ){
+            novo_n1 = parseInt(prompt("Informe um novo valor para a nota 1 entre 0 e 10"));
+            n1a = novo_n1;
+          }
+         while(n2a < 0 || n2a > 10 ){
+            novo_n2 =  parseInt(prompt("Informe um novo valor para a nota 2 entre 0 e 10"));
+            n2a = novo_n2;
+        }
+        media = (n1a + n2a)/2;          
+         alert("A média é igual a: " + media)
+         
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

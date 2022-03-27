@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 14</title>
+    <script>
+    
+    /*14 - Escreva um programa em que o usuário 
+    informe 10 valores e 
+    escreva quantos desses
+    valores lidos estão entre os números 24 e 42 
+    (incluindo os valores 24 e 42) e quantos deles
+    estão fora deste intervalo.*/
+
+
+    var intervalo = 0;
+    var fora = 0;
+    contador = 0;
+    var array = [];
+    var array2 = [];
+    while(contador < 10){
+
+        var valor = parseInt(prompt("Informe 10 valores")) ;
+    
+        if(valor>=24 && valor<=42){
+           /*document.write( valor + "<br>");*/
+           array.push(valor); 
+            intervalo = intervalo + 1;
+        }
+        else{
+            fora = fora + 1;
+            array2.push(valor);
+        }
+    contador++;
+    }
+    document.write("<h4>Os valores que estão entre os números 24 e 42 </h4>");
+    document.write("As quantidades dos números dentro do intervalo são: " + intervalo +"<br>Os números são: " + array +
+    "<br> As quantidades dos números fora do intervalo são: " + fora + "<br> Os números são: " + array2);
+
+    
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
